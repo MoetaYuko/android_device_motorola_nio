@@ -65,9 +65,11 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 0x06000000
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_RAMDISK_USE_LZMA := true
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
@@ -82,13 +84,15 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/fstab.qcom
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
+    vendor_boot \
     dtbo \
+    odm \
     product \
     system \
     system_ext \
+    vendor \
     vbmeta \
-    vbmeta_system \
-    vendor
+    vbmeta_system
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_USES_RECOVERY_AS_BOOT := true

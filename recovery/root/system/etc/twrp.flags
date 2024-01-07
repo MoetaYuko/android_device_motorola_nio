@@ -34,3 +34,4 @@
 /system_ext_image    emmc   /dev/block/bootdevice/by-name/system_ext              flags=backup=1;display="System_ext Image";flashimg=1
 /vendor_image    emmc       /dev/block/bootdevice/by-name/vendor                  flags=backup=1;display="Vendor Image";flashimg=1
 /product_image   emmc       /dev/block/bootdevice/by-name/product                 flags=backup=1;display="Product Image";flashimg=1
+/odm_image       emmc       /dev/block/bootdevice/by-name/odm                     flags=backup=1;display="ODM Image";flashimg=1
