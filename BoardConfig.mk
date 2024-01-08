@@ -112,6 +112,7 @@ TW_DEFAULT_BRIGHTNESS := 1200
 TW_THEME := portrait_hdpi
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
 TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/qcom_battery"
+TW_EXCLUDE_NANO := true
 
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
@@ -129,9 +130,6 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 BOARD_USES_METADATA_PARTITION := true
 
 TW_HAS_EDL_MODE := true
-
-# Asian region languages
-TW_EXTRA_LANGUAGES := true
 
 # Notch Offset
 TW_Y_OFFSET := 115
